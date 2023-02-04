@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Media Streaming</string>
+    <string name="base_url">https://66anmbvqtuyabd7dpvy5vwqp2e0drbfz.lambda-url.ap-southeast-1.on.aws</string>
+    <string name="toolbar_settings">Settings</string>
+</resources>

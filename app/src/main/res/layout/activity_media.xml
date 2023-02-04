@@ -1,0 +1,97 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/exo_fullscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:use_controller="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+-->
+
+
+    <ImageView
+        android:id="@+id/ivSettings"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_settings_24"
+        android:elevation="20dp"
+        app:tint="@color/purple_500"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cd1"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    app:cardCornerRadius="20dp"
+    android:elevation="0dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/cd2">
+    
+    <ImageView
+        android:id="@+id/ivSilder1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/white"/>
+
+</androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cd1"
+            app:layout_constraintEnd_toStartOf="@id/cd3">
+
+            <ImageView
+                android:id="@+id/ivSilder2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cd3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="0dp"
+            app:layout_constraintStart_toEndOf="@+id/cd2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/ivSilder3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/white"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
